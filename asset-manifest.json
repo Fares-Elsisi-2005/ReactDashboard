@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dashboard-using-react/static/css/main.7fda9336.css",
+    "main.js": "/dashboard-using-react/static/js/main.6f305450.js",
+    "index.html": "/dashboard-using-react/index.html",
+    "main.7fda9336.css.map": "/dashboard-using-react/static/css/main.7fda9336.css.map",
+    "main.6f305450.js.map": "/dashboard-using-react/static/js/main.6f305450.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fda9336.css",
+    "static/js/main.6f305450.js"
+  ]
+}
