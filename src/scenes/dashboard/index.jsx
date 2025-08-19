@@ -20,6 +20,7 @@ const Dashboard = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
      const isMobile = useMediaQuery('(max-width:600px)');
+     const isTablet = useMediaQuery('(max-width:1100px)');
 
 
     return (
@@ -57,7 +58,10 @@ const Dashboard = () => {
                 <Box gridColumn={isMobile?"span 12":"span 3"}
                     backgroundColor={colors.blueAccent[800]}
                     display="flex" alignItems="center"
-                    justifyContent="center"> 
+                    justifyContent="center"
+                    borderRadius={"10px"}
+                     
+                > 
                     <StatBox
                         title="12,356"
                         subtitle="Emails Sent"
@@ -78,7 +82,9 @@ const Dashboard = () => {
                 <Box gridColumn={isMobile?"span 12":"span 3"} 
                     backgroundColor={colors.blueAccent[800]}
                     display="flex" alignItems="center"
-                    justifyContent="center"> 
+                    justifyContent="center"
+                     borderRadius={"10px"}
+                > 
                     <StatBox
                         title="59.599"
                         subtitle="Sales obtained"
@@ -99,7 +105,9 @@ const Dashboard = () => {
                 <Box gridColumn={isMobile?"span 12":"span 3"}
                     backgroundColor={colors.blueAccent[800]}
                     display="flex" alignItems="center"
-                    justifyContent="center"> 
+                    justifyContent="center"
+                     borderRadius={"10px"}
+                > 
                     <StatBox
                         title="56,887"
                         subtitle="New clients"
@@ -120,7 +128,9 @@ const Dashboard = () => {
                 <Box gridColumn={isMobile?"span 12":"span 3"}
                     backgroundColor={colors.blueAccent[800]}
                     display="flex" alignItems="center"
-                    justifyContent="center"> 
+                    justifyContent="center"
+                     borderRadius={"10px"}
+                > 
                     <StatBox
                         title="45,764"
                         subtitle="Traffic Inbound"
@@ -141,9 +151,10 @@ const Dashboard = () => {
 
                 {/* ROW 2 */}
                 <Box
-                    gridColumn={isMobile?"span 12":"span 8"}
+                    gridColumn={ "span 12" }
                     gridRow="span 2"
                     backgroundColor={colors.blueAccent[800]}
+                     borderRadius={"10px"}
                 >
                     <Box
                         mt="25px"
@@ -151,6 +162,8 @@ const Dashboard = () => {
                         display="flex"
                         justifyContent="space-between"
                         alignItems="center"
+                        
+                          
                     >
                         <Box>
                             <Typography variant="h5"
@@ -192,10 +205,11 @@ const Dashboard = () => {
 
                  {/* TRANSACTIONS */}
                 <Box
-                    gridColumn={isMobile?"span 12":"span 4"}
+                    gridColumn={isMobile?"span 12":"span 6"}
                     gridRow="span 2"
                     backgroundColor={colors.blueAccent[800]}
                     overflow="auto"
+                     borderRadius={"10px"}
                 >
                     <Box
                         display="flex"
@@ -255,10 +269,11 @@ const Dashboard = () => {
 
                 {/* ROW 3 */}
                 <Box
-                    gridColumn={isMobile?"span 12":"span 4"}
+                    gridColumn={isMobile?"span 12":"span 6"}
                     gridRow={"span 2"}
                     backgroundColor={colors.blueAccent[800]}
                     p={"30px"}
+                     borderRadius={"10px"}
                 >
                     <Typography variant="5" fontWeight={"600"}>
                         Campaign
@@ -287,9 +302,10 @@ const Dashboard = () => {
 
                 {/* ================= */}
                 <Box
-                    gridColumn={isMobile?"span 12":"span 4"}
+                    gridColumn={ "span 12" }
                     gridRow={"span 2"}
                     backgroundColor={colors.blueAccent[800]}
+                     borderRadius={"10px"}
                 >
                     <Typography variant="5" fontWeight={"600"} sx={{p:"30px 30px 0 30px "}}>
                         Sales Quantity
@@ -308,10 +324,11 @@ const Dashboard = () => {
                  
                 {/* ======================== */}
                  <Box
-                    gridColumn={isMobile?"span 12":"span 4"}
+                    gridColumn={ "span 12" }
                     gridRow={"span 2"}
                     backgroundColor={colors.blueAccent[800]}
                     p={"30px"}
+                     borderRadius={"10px"}
                 >
                     <Typography variant="5" fontWeight={"600"} sx={{mb:"15px"}}>
                         Geography Based Traffic
